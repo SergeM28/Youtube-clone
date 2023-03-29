@@ -25,7 +25,7 @@ const SearchBar = () => {
       <input className='search-bar' placeholder='Search'
       value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)}/>
       <IconButton>
-        <Search type='submit' sx={{p: '10px', color: 'red'}}/>
+        <Search type='submit' sx={{p: '10px', color: 'red'}} aria-label='search'/>
       </IconButton>
     </Paper>
   )

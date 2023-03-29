@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Box, Stack, Typography } from '@mui/material';
-import Sidebar from './Sidebar';
-import Videos from './Videos';
+import { Sidebar, Videos } from './index';
 import { fetchFromAPI } from '../utils/FetchFromAPI';
 
 const Feed = () => {
@@ -27,12 +26,6 @@ const Feed = () => {
         <Sidebar 
         selectedCategory={selectedCategory}
         setSelectedCategory={setSelectedCategory} />
-        <Typography className='copyright' variant='body2' sx={{
-          mt: 1.5,
-          color: '#fff'
-        }}>
-
-        </Typography>
       </Box>
       <Box p={2} sx={{ overflowY: 'auto', height: '90vh', flex: 2 }}>
         <Typography variant='h4' fontWeight='bold' mb={2}
